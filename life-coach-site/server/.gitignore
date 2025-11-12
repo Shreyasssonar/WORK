@@ -1,0 +1,9 @@
+PORT=4000
+ADMIN_UPLOAD_TOKEN=super-secret-token-change-this
+# Optional for contact email (if you configure nodemailer)
+SMTP_HOST=smtp.example.com
+SMTP_PORT=587
+SMTP_USER=username
+SMTP_PASS=password
+FROM_EMAIL=you@example.com
+TO_EMAIL=you@example.com
