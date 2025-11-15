@@ -10,7 +10,6 @@ export default function GalleryPage() {
     const [loading, setLoading] = useState(true);
     const [selectedImage, setSelectedImage] = useState(null);
 
-    // Fetch uploaded media
     useEffect(() => {
         const loadMedia = async () => {
             try {
@@ -26,7 +25,6 @@ export default function GalleryPage() {
         loadMedia();
     }, []);
 
-    // Handle delete (optional)
     const handleDelete = async (name) => {
         try {
             const res = await fetch(`/api/media/${name}`, { method: "DELETE" });
@@ -48,7 +46,9 @@ export default function GalleryPage() {
             <h1 style={styles.title}>Gallery</h1>
 
             {loading ? (
-                <Spin tip="Loading gallery..." size="large" />
+                <Spin tip="Loading gallery..." size="large">
+                    <div style={{ height: 100 }} />
+                </Spin>
             ) : media.length === 0 ? (
                 <Empty description="No media found. Try uploading from Admin page." />
             ) : (
