@@ -1,0 +1,93 @@
+/* ---------- ABOUT ---------- */
+.about {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* IMAGE */
+.about-img {
+    flex: 1;
+    min-width: 280px;
+    max-width: 420px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* TEXT */
+.about-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 17px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.about-text ul {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+    .about {
+        text-align: center;
+    }
+
+    .about-text h2 {
+        font-size: 30px;
+    }
+
+    .about-text p,
+    .about-text ul {
+        max-width: 500px;
+        margin: 0 auto 25px;
+    }
+
+    .about-text ul {
+        text-align: left;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-text h2 {
+        font-size: 26px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+    }
+
+    .about-img {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .about-text h2 {
+        font-size: 22px;
+    }
+}

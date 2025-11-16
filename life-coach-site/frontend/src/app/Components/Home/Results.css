@@ -1,0 +1,78 @@
+/* ---------- RESULTS ---------- */
+.results {
+    background: #f5f7fa;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.results h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.results p {
+    max-width: 700px;
+    margin: 0 auto 35px;
+    color: #555;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.results-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.result-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.result-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+/* Tablet */
+@media (max-width: 992px) {
+    .results-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .results-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .results {
+        padding: 40px 15px;
+    }
+
+    .result-card {
+        padding: 20px;
+    }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+    .result-img {
+        height: 180px;
+    }
+
+    .result-card h3 {
+        font-size: 18px;
+    }
+}

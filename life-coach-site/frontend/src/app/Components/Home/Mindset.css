@@ -1,0 +1,87 @@
+.mindset-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.mindset-icon-box {
+    width: 50px;
+    min-width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: blue;
+    font-size: 34px;
+}
+
+.mindset-content h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.mindset-content p {
+    margin-top: 6px;
+    font-size: 15px;
+    color: #444;
+    line-height: 1.5;
+}
+
+/* ---------- MINDSET ---------- */
+.mindset {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.mindset-grid {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+}
+
+.mindset-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+/* Tablet */
+@media (max-width: 992px) {
+    .mindset-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .mindset-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mindset {
+        padding: 40px 15px;
+    }
+
+    .mindset-card {
+        padding: 20px;
+    }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+    .mindset-content h3 {
+        font-size: 18px;
+    }
+
+    .mindset-row {
+        gap: 12px;
+    }
+}
